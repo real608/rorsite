@@ -1,3 +1,3 @@
 # Resources
 
-## like videos or images
+like videos or images
