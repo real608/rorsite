@@ -73,6 +73,7 @@ local plr = game.Players:CreateLocalPlayer(0)
 game:GetService("Visit")
 game:GetService("RunService"):run()
 plr:LoadCharacter()
+plr.Name = "NoName 4785"
 while true do
     wait(0.001)
     if plr.Character.Humanoid.Health == 0 then
