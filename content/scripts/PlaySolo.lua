@@ -73,7 +73,23 @@ local plr = game.Players:CreateLocalPlayer(0)
 game:GetService("Visit")
 game:GetService("RunService"):run()
 plr:LoadCharacter()
-plr.Name = "NoName 4785"
+
+-- have to do this so that the same numbers arent generated every time
+math.randomseed(os.time())
+math.random(); math.random(); math.random()
+
+digits = 4 -- the amount of times to add digits to the end of the player name
+
+prefix = "NoName "
+suffix = "" -- wouldnt wanna type anything here, the digits will be added here!
+
+for i=1, digits do
+    suffix = suffix .. math.random(1,9)
+    i = i + 1;
+end
+
+plr.Name = prefix .. suffix
+
 while true do
     wait(0.001)
     if plr.Character.Humanoid.Health == 0 then
