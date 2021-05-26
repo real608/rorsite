@@ -1,7 +1,7 @@
 -- Script by supermarioclub231 as known as marioroblox102, and special thanks to jacko for some scripts things
 
 -- Resize script
-coroutine.resume(coroutine.create(
+coroutine.resume(coroutine.create()
 
 function()
     local CoreGui = game:GetService("CoreGui")
