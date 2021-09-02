@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PORN</title>
+      <center><img src="/content/porn.png"></center>
+        <h1 style="text-align: center;">Revival Uptime Statuses</h1>
+      <p style="text-align: center;">Shopium:</p>
+      <p style="text-align: center;"><span id="shop" style="text-align: center; color: #0000ff;">Checking...</span></p>
+      <p style="text-align: center;">Rainway:</p>
+      <p style="text-align: center;"><span id="rain" style="text-align: center; color: #0000ff;">Checking...</span></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p>&nbsp;</p>
+        <link rel="stylesheet" href="pretty-print-json.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alfg/ping.js@0.2.2/dist/ping.min.js" type="text/javascript"></script>
+        <script>
+            var ping = new Ping();
+
+            ping.ping("https://shopium.cf", function (err, data) {
+                console.log("Checking Shopium...");
+                document.getElementById("shop").innerHTML = "Online";
+                if (err) {
+                  document.getElementById("shop").innerHTML = "Offline";
+                }
+            });
+            
+            ping.ping("https://rainway.xyz", function (err, data) {
+                console.log("Checking Rainway...");
+                document.getElementById("rain").innerHTML = "Online";
+                if (err) {
+                  document.getElementById("rain").innerHTML = "Offline";
+                }
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+<a href="/">Home</a>
+</html>
+<meta property="og:type" content="website">
+<meta property="og:title" content="PORN" />
+<meta property="og:description" content="Protect Old ROBLOX Now!" />
+<meta property="og:url" content="https://reviveoldroblox.tk" />
+<meta property="og:image" content="http://reviveoldroblox.tk/content/porn.png" />
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
